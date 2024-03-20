@@ -2,48 +2,142 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockey Hive</title>
-    <!-- css -->
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey Hive</title>
+  <!-- css -->
+  <link rel="stylesheet" href="styles/style.css">
 
-    <!-- tailwind and daisy ui -->
+  <!-- tailwind and daisy ui -->
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- font awesome -->
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- google fonts -->
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
 
-    <!-- tailwind custom classes -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <!-- tailwind custom classes -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'text-color': '#424247',
+            'btn-color': '#FF4240',
           }
         }
-      </script>
+      }
+    }
+  </script>
 </head>
 
-<body>
-    <header>
+<body class=" poppins">
+  <header class="md:container md:mx-auto">
 
-    </header>
+    <!-- navbar -->
+    <div class="navbar bg-base-100 ">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a class="text-base font-normal text-text-color" class="text-base font-normal text-text-color">Home</a>
+            </li>
+            <li><a class="text-base font-normal text-text-color">About</a></li>
+            <li><a class="text-base font-normal text-text-color">Pages</a></li>
+            <li><a class="text-base font-normal text-text-color">Blog</a></li>
+            <li><a class="text-base font-normal text-text-color">Contact</a></li>
 
-    <main>
+          </ul>
+        </div>
+        <a class="btn btn-ghost font-extrabold text-2xl lg:text-4xl	">Hockey<span
+            class="text-orange-600 m-0 p-0 gap-0 space-x-0">Hive</span></a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="text-orange-600 text-base font-normal ">Home</a></li>
 
-    </main>
+          <li><a class="text-base font-normal text-text-color">About</a></li>
+          <li><a class="text-base font-normal text-text-color">Pages</a></li>
+          <li><a class="text-base font-normal text-text-color">Blog</a></li>
+          <li><a class="text-base font-normal text-text-color">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <i class="fa fa-search text-gray-600 mr-1 lg:mr-5"></i>
+        <a class="btn btn-primary border-0 bg-btn-color text-white">Get Ticket</a>
+      </div>
+    </div>
 
-    <footer>
+    <!-- carousel -->
+    <!-- slider-1 -->
+    <div class="carousel w-full mt-28">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="Images/1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slider-2 -->
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="Images/1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slider-3 -->
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="Images/1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <!-- slider-4 -->
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="Images/1.png" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
 
-    </footer>
+    <div class="lg:relative lg:flex lg:justify-end mt-6">
+      <div class="bg-[#131318] lg:w-1/3 p-8 rounded-xl lg:absolute lg:bottom-40 lg:right-20  ">
+        <h3 class="lg:text-2xl text-xl font-semibold	 lg:font-bold text-white mb-5  ">Meet all the heroes from the field</h3>
+        <p class="text-base text-gray-400 font-medium">
+          Enter the realm where legends skate and dreams take flight,
+          Meet the heroes of the ice, blazing a trail of light.</p>
+      </div>
+    </div>
+
+
+
+  </header>
+
+  <main class="md:container md:mx-auto">
+
+  </main>
+
+  <footer>
+
+  </footer>
 </body>
 
 </html>
