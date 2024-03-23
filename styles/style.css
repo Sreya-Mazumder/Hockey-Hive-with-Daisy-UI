@@ -1,3 +1,20 @@
 .poppins {
     font-family: "Poppins", sans-serif;
 }
+
+.bg-image1{
+    
+    background-image:url(../Images/2.png);
+    background-size: cover;
+    
+}
+
+.bg-image2{
+    background-image: url(../Images/3.png);
+    background-size: cover;
+}
+
+.bg-image3{
+    background-image: url(../Images/4.png);
+    background-size: cover;
+}
